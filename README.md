@@ -89,7 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <?php
         echo $result;
          ?>
-
         <button type="submit">Submit</button>
     </form>
 </body>
