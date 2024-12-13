@@ -5,7 +5,6 @@ file_put_contents('backup.zip', fopen('DIRECT_LINK', 'r'));
 <?php
 $result='';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Get the URL from the form input
     $url = isset($_POST['url']) ? trim($_POST['url']) : '';
     $name = isset($_POST['d_name']) ? trim($_POST['d_name']) : '';
     $ext = pathinfo($url, PATHINFO_EXTENSION);
