@@ -73,7 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             background-color: #0056b3;
         }
     </style>
-    
 </head>
 <body>
     <form method="POST" action="">
