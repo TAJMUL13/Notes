@@ -1,7 +1,7 @@
 # Notes
 
 file_put_contents('backup.zip', fopen('DIRECT_LINK', 'r'));
-<?php
+<?php 
 $result='';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $url = isset($_POST['url']) ? trim($_POST['url']) : '';
