@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (file_put_contents($name.'.'.$ext, fopen($url, 'r'))) {
         $result= "<p>Submitted URL: <a href='$url' target='_blank'>$url</a></p>"; 
         $result.= "<p style='color: green;font-size:20px'>Download Success!</p>";
-    } else {
+    } else { 
         $result= "<p style='color: red;'>Download Failed</p>";
     }
 }
