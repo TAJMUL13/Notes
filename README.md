@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = isset($_POST['d_name']) ? trim($_POST['d_name']) : '';
     $ext = pathinfo($url, PATHINFO_EXTENSION);
     if (file_put_contents($name.'.'.$ext, fopen($url, 'r'))) {
-        $result= "<p>Submitted URL: <a href='$url' target='_blank'>$url</a></p>";
+        $result= "<p>Submitted URL: <a href='$url' target='_blank'>$url</a></p>"; 
         $result.= "<p style='color: green;font-size:20px'>Download Success!</p>";
     } else {
         $result= "<p style='color: red;'>Download Failed</p>";
