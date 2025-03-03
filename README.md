@@ -1,5 +1,5 @@
 # Notes
-
+//it can other name dot zip
 file_put_contents('backup.zip', fopen('DIRECT_LINK', 'r'));
 <?php 
 $result='';
